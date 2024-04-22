@@ -25,6 +25,13 @@ namespace Shopping_Tutorial.Models
         public CategoryModel Category { get; set; }
 
         public BrandModel Brand { get; set; }
+
+        public string Image { get; set; }
+
+        internal object OrderByDescending(Func<object, object> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

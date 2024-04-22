@@ -1,21 +1,27 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Shopping_Tutorial.Models;
+using Shopping_Tutorial.Repository;
 
 namespace Shopping_Tutorial.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly DataContext _dataContext;
+
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, DataContext context)
     {
         _logger = logger;
+        _dataContext = context;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var products = await _dataContext.Products.Include("Category").Include("Brand").ToListAsync();
+        return View(products);
     }
 
     public IActionResult Privacy()

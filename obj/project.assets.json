@@ -2058,25 +2058,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/phamvanquang/.nuget/packages/": {}
+    "C:\\Users\\NHAN KIET\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/phamvanquang/Projects/Shopping_Tutorial/Shopping_Tutorial/Shopping_Tutorial.csproj",
+      "projectUniqueName": "C:\\Users\\NHAN KIET\\source\\repos\\Shopping_Tutorial\\Shopping_Tutorial.csproj",
       "projectName": "Shopping_Tutorial",
-      "projectPath": "/Users/phamvanquang/Projects/Shopping_Tutorial/Shopping_Tutorial/Shopping_Tutorial.csproj",
-      "packagesPath": "/Users/phamvanquang/.nuget/packages/",
-      "outputPath": "/Users/phamvanquang/Projects/Shopping_Tutorial/Shopping_Tutorial/obj/",
+      "projectPath": "C:\\Users\\NHAN KIET\\source\\repos\\Shopping_Tutorial\\Shopping_Tutorial.csproj",
+      "packagesPath": "C:\\Users\\NHAN KIET\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NHAN KIET\\source\\repos\\Shopping_Tutorial\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/phamvanquang/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\NHAN KIET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2089,6 +2095,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2139,7 +2150,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
