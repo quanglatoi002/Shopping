@@ -2,7 +2,7 @@
 
 namespace Shopping_Tutorial.Repository
 {
-	public static class SessionExtensions
+    public static class SessionExtensions
 	{
 		// this ở đây dùng để định nghĩa 1 pt mở rộng
 		public static void SetJson(this ISession session, string key, object value)
@@ -14,7 +14,8 @@ namespace Shopping_Tutorial.Repository
 		public static T? GetJson<T>(this ISession session, string key)
 		{
 			var sessionData = session.GetString(key);
-			return sessionData == null ? default(T) : JsonConvert.DeserializeObject<T>(sessionData);
+
+            return sessionData == null ? default : JsonConvert.DeserializeObject<T>(sessionData);
 		}
 	}
 }

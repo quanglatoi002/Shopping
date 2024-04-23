@@ -14,7 +14,9 @@ namespace Shopping_Tutorial.Models
 		{
 			get { return Quantity * Price; }
 		}
-		public CartItemModel(ProductModel product)
+		public CartItemModel(){}
+
+        public CartItemModel(ProductModel product)
 		{
 			ProductId = product.Id;
 			ProductName = product.Name;
