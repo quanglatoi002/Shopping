@@ -14,7 +14,6 @@
     <Folder Include="wwwroot\images\" />
     <Folder Include="Views\Category\" />
     <Folder Include="Views\Login\" />
-    <Folder Include="Views\Product\" />
     <Folder Include="Views\Cart\" />
     <Folder Include="Views\Checkout\" />
   </ItemGroup>

@@ -15,8 +15,7 @@ namespace Shopping_Tutorial.Controllers
         }
         public async Task<IActionResult> Index(string Slug = "")
         {
-            if (!string.IsNullOrEmpty(Slug){ }
-                CategoryModel category = _dataContext?.Categories.Where(c => c.Slug == Slug).FirstOrDefault();
+               CategoryModel? category = _dataContext?.Categories.Where(c => c.Slug == Slug).FirstOrDefault();
             if (category == null) return RedirectToAction("Index");
             // tìm sản phẩm ở trong dmuc này
             var productsByCategory = _dataContext?.Products.Where(c => c.CategoryId == category.Id);

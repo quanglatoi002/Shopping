@@ -28,10 +28,7 @@ namespace Shopping_Tutorial.Models
 
         public string Image { get; set; }
 
-        internal object OrderByDescending(Func<object, object> value)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
 
